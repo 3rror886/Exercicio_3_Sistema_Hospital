@@ -1,0 +1,47 @@
+Frase do dia: "O que um vencedor faz quando a vida lhe da limões?!"
+- "faz uma limonada?"
+- "Não... ele as espreme de volta nos olhos da vida!" ~ Nicole Watterson (O incrivel mundo de Gumball)
+
+Entidades:
+
+Paciente : 
+Prontuário 
+Médico 
+Especialidade 
+"Medico_Especialidade"
+
+Atributos:
+
+Paciente:
+
+id_paciente :  PK
+nome
+cpf
+data_nascimento
+
+Prontuário:
+
+id_prontuario
+numero_prontuario
+data_criacao
+
+Médico:
+
+id_medico : PK
+nome
+crm
+
+Especialidade:
+
+id_especialidade : PK
+nome_especialidade
+
+"Medico_Especialidade":
+
+id_medico
+id_especialidade
+
+Relacionamento e Cardinalidade:
+
+Paciente para Prontuário (1:1)
+Médico para Especialidade (N:N)
